@@ -258,4 +258,97 @@
     });
   }
 
+  /* ----------------------------------------------------------
+     6. FOTOREEKS — traag vanzelf doorschuiven
+
+     De rij blijft een gewone scroll-container, dus vegen en
+     slepen werken gewoon. Het schuiven pauzeert zodra iemand
+     de reeks aanraakt en pakt daarna weer op. De foto's worden
+     één keer gedupliceerd, zodat het eind naadloos overgaat in
+     het begin.
+  ---------------------------------------------------------- */
+  const reeks = document.querySelector('.foto-reeks-rij');
+
+  if (reeks && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const SNELHEID = 22;      // pixels per seconde — rustig wandeltempo
+    const HERVAT_NA = 2500;   // ms stil na een aanraking voor het weer loopt
+
+    // Kopie van de reeks voor de naadloze overgang
+    const origineel = Array.prototype.slice.call(reeks.children);
+    origineel.forEach(function (li) {
+      const kopie = li.cloneNode(true);
+      kopie.setAttribute('aria-hidden', 'true');
+      const foto = kopie.querySelector('img');
+      if (foto) {
+        foto.setAttribute('alt', '');
+        foto.setAttribute('loading', 'lazy');
+      }
+      reeks.appendChild(kopie);
+    });
+
+    let loopt = true;
+    let zichtbaar = true;
+    let hervatTimer = null;
+    let vorigeTijd = null;
+    // Eigen positie bijhouden: scrollLeft rondt af op halve pixels, en bij
+    // 22 px/s is elke stap kleiner dan dat. Alleen optellen bij scrollLeft
+    // zou het schuiven daardoor laten haperen.
+    let positie = reeks.scrollLeft;
+
+    function pauzeer() {
+      loopt = false;
+      clearTimeout(hervatTimer);
+    }
+
+    function hervatStraks() {
+      clearTimeout(hervatTimer);
+      hervatTimer = setTimeout(function () {
+        positie = reeks.scrollLeft;   // verder vanaf waar de bezoeker stopte
+        vorigeTijd = null;
+        loopt = true;
+      }, HERVAT_NA);
+    }
+
+    reeks.addEventListener('pointerdown', pauzeer);
+    reeks.addEventListener('pointerup', hervatStraks);
+    reeks.addEventListener('pointercancel', hervatStraks);
+    reeks.addEventListener('touchstart', pauzeer, { passive: true });
+    reeks.addEventListener('touchend', hervatStraks, { passive: true });
+    reeks.addEventListener('mouseenter', pauzeer);
+    reeks.addEventListener('mouseleave', hervatStraks);
+    reeks.addEventListener('focusin', pauzeer);
+    reeks.addEventListener('focusout', hervatStraks);
+    reeks.addEventListener('wheel', function () {
+      pauzeer();
+      hervatStraks();
+    }, { passive: true });
+
+    // Buiten beeld niet doorschuiven: scheelt batterij op de telefoon
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (entries) {
+        zichtbaar = entries[0].isIntersecting;
+        if (zichtbaar) vorigeTijd = null;
+      }, { threshold: 0 }).observe(reeks);
+    }
+
+    function stap(tijd) {
+      if (vorigeTijd === null) vorigeTijd = tijd;
+      const delta = (tijd - vorigeTijd) / 1000;
+      vorigeTijd = tijd;
+
+      // delta-grens: na een verborgen tab of een trage frame mag het niet
+      // in één keer vooruitspringen
+      if (loopt && zichtbaar && delta > 0 && delta < 0.5) {
+        const helft = reeks.scrollWidth / 2;
+        positie += SNELHEID * delta;
+        if (positie >= helft) positie -= helft;
+        reeks.scrollLeft = positie;
+      }
+
+      requestAnimationFrame(stap);
+    }
+
+    requestAnimationFrame(stap);
+  }
+
 })();

@@ -1022,8 +1022,7 @@ footer.band--inkt {
   margin: 0;
   padding: 0 20px;
   overflow-x: auto;
-  scroll-snap-type: x proximity;
-  scroll-padding-left: 20px;
+  /* Geen scroll-snap: die zou tegen het vanzelf doorschuiven in werken */
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -1035,7 +1034,6 @@ footer.band--inkt {
 
 .foto-reeks-rij > li {
   flex: 0 0 auto;
-  scroll-snap-align: start;
 }
 
 .foto-reeks-foto {
@@ -1063,7 +1061,6 @@ footer.band--inkt {
   .foto-reeks-rij {
     padding-left: max(20px, calc((100vw - var(--container-max)) / 2 + 20px));
     padding-right: max(20px, calc((100vw - var(--container-max)) / 2 + 20px));
-    scroll-padding-left: max(20px, calc((100vw - var(--container-max)) / 2 + 20px));
   }
 
   .foto-reeks-foto {
