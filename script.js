@@ -263,29 +263,19 @@
 
      De rij blijft een gewone scroll-container, dus vegen en
      slepen werken gewoon. Het schuiven pauzeert zodra iemand
-     de reeks aanraakt en pakt daarna weer op. De foto's worden
-     één keer gedupliceerd, zodat het eind naadloos overgaat in
-     het begin.
+     de reeks aanraakt en pakt daarna weer op. Elke foto staat
+     er één keer: aan het eind wacht de reeks even en schuift
+     dan in dezelfde rust terug naar het begin.
   ---------------------------------------------------------- */
   const reeks = document.querySelector('.foto-reeks-rij');
 
   if (reeks && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     const SNELHEID = 22;      // pixels per seconde — rustig wandeltempo
     const HERVAT_NA = 2500;   // ms stil na een aanraking voor het weer loopt
+    const WACHT_AAN_HET_EIND = 1800;  // ms pauze voor het omkeren
 
-    // Kopie van de reeks voor de naadloze overgang
-    const origineel = Array.prototype.slice.call(reeks.children);
-    origineel.forEach(function (li) {
-      const kopie = li.cloneNode(true);
-      kopie.setAttribute('aria-hidden', 'true');
-      const foto = kopie.querySelector('img');
-      if (foto) {
-        foto.setAttribute('alt', '');
-        foto.setAttribute('loading', 'lazy');
-      }
-      reeks.appendChild(kopie);
-    });
-
+    let richting = 1;         // 1 = naar rechts, -1 = terug naar links
+    let keerTimer = null;
     let loopt = true;
     let zichtbaar = true;
     let hervatTimer = null;
@@ -298,6 +288,7 @@
     function pauzeer() {
       loopt = false;
       clearTimeout(hervatTimer);
+      clearTimeout(keerTimer);
     }
 
     function hervatStraks() {
@@ -307,6 +298,18 @@
         vorigeTijd = null;
         loopt = true;
       }, HERVAT_NA);
+    }
+
+    // Aan het eind van de rij even stilstaan en dan de andere kant op
+    function keerOm(nieuweRichting) {
+      loopt = false;
+      clearTimeout(keerTimer);
+      keerTimer = setTimeout(function () {
+        richting = nieuweRichting;
+        positie = reeks.scrollLeft;
+        vorigeTijd = null;
+        loopt = true;
+      }, WACHT_AAN_HET_EIND);
     }
 
     reeks.addEventListener('pointerdown', pauzeer);
@@ -339,10 +342,21 @@
       // delta-grens: na een verborgen tab of een trage frame mag het niet
       // in één keer vooruitspringen
       if (loopt && zichtbaar && delta > 0 && delta < 0.5) {
-        const helft = reeks.scrollWidth / 2;
-        positie += SNELHEID * delta;
-        if (positie >= helft) positie -= helft;
-        reeks.scrollLeft = positie;
+        const einde = reeks.scrollWidth - reeks.clientWidth;
+
+        if (einde > 1) {
+          positie += SNELHEID * delta * richting;
+
+          if (positie >= einde) {
+            positie = einde;
+            keerOm(-1);
+          } else if (positie <= 0) {
+            positie = 0;
+            keerOm(1);
+          }
+
+          reeks.scrollLeft = positie;
+        }
       }
 
       requestAnimationFrame(stap);
