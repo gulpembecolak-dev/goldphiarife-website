@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gold Phi Arife — Schoonheidssalon in Mortsel (Antwerpen) | Laserontharing & PMU</title>
+  <meta name="description" content="Gold Phi Arife — schoonheidssalon in Mortsel, alleen voor vrouwen. Laserontharing, permanente make-up en gelaatsbehandelingen door een ervaren specialist.">
+  <meta name="author" content="Gold Phi Arife">
+  <link rel="canonical" href="https://goldphiarife.be/">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gold Phi Arife — Schoonheidssalon in Mortsel">
+  <meta property="og:description" content="Laserontharing, permanente make-up en gelaatsbehandelingen. Alleen voor vrouwen. Mortsel, Antwerpen.">
+  <meta property="og:url" content="https://goldphiarife.be">
+  <meta property="og:image" content="https://goldphiarife.be/media/og-afbeelding.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Zegel van Gold Phi Arife — schoonheidssalon in Mortsel">
+  <meta property="og:locale" content="nl_BE">
+  <meta property="og:site_name" content="Gold Phi Arife">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://goldphiarife.be/media/og-afbeelding.jpg">
+
+  <!-- Merk-iconen: het φ-symbool blijft tot 16px leesbaar, het zegel niet -->
+  <link rel="icon" href="media/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16.png">
+  <link rel="apple-touch-icon" href="media/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#141311">
+
+  <!-- De hero-achtergrond is een CSS-background en wordt daardoor laat
+       ontdekt; preload haalt hem naar voren (belangrijkste LCP-element). -->
+  <link rel="preload" as="image" href="media/hero.webp" type="image/webp" fetchpriority="high">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "Gold Phi Arife",
+    "description": "Schoonheidssalon in Mortsel, alleen voor vrouwen. Laserontharing, permanente make-up en gelaatsbehandelingen.",
+    "url": "https://goldphiarife.be",
+    "logo": "https://goldphiarife.be/media/favicon-512.png",
+    "image": "https://goldphiarife.be/media/og-afbeelding.jpg",
+    "telephone": "+32485140436",
+    "email": "arifegoldphi@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Prins Leopoldlei 3",
+      "addressLocality": "Mortsel",
+      "postalCode": "2640",
+      "addressCountry": "BE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 51.1697598,
+      "longitude": 4.4554155
+    },
+    "openingHoursSpecification": [
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "10:00", "closes": "20:00"},
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "19:00", "closes": "21:00"},
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "19:00", "closes": "21:00"},
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "10:00", "closes": "20:00"},
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "10:00", "closes": "20:00"},
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "18:00", "closes": "21:00"},
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "10:00", "closes": "20:00"}
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Behandelingen",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Laserontharing"}, "priceSpecification": {"@type": "PriceSpecification", "price": "20", "priceCurrency": "EUR", "description": "Vanaf €20"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Permanente Make-Up"}, "priceSpecification": {"@type": "PriceSpecification", "price": "200", "priceCurrency": "EUR", "description": "Vanaf €200"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Gelaatsbehandeling"}, "priceSpecification": {"@type": "PriceSpecification", "price": "65", "priceCurrency": "EUR"}}
+      ]
+    }
+  }
+  </script>
+</head>
+<body>
+
+<header class="site-header" id="site-header">
+  <nav class="container site-nav">
+    <a href="#" class="nav-logo">
+      <img src="media/phi.png" alt="" class="nav-logo-merk" width="194" height="256" aria-hidden="true">
+      <span>Gold Phi Arife</span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="#behandelingen">Behandelingen</a></li>
+      <li><a href="#advies">Adviesgesprek</a></li>
+      <li><a href="#veiligheid">Veiligheid</a></li>
+      <li><a href="#over">Over</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="https://wa.me/32485140436?text=Hallo%20Gold%20Phi%20Arife%2C%20ik%20wil%20graag%20een%20afspraak%20maken%20voor%20" class="btn btn--primair" target="_blank" rel="noopener" data-boek-open>Afspraak maken</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<section id="hero" class="band--inkt hero fade-in">
+  <div class="container hero-content">
+    <span class="label">Schoonheidssalon · Mortsel, Antwerpen</span>
+    <h1>Gold Phi Arife</h1>
+    <p class="hero-tekst">Persoonlijke begeleiding door één specialist. Een besloten salon, uitsluitend voor vrouwen.</p>
+    <div class="hero-acties">
+      <a href="#aanbod" class="btn btn--primair">Behandelingen &darr;</a>
+      <a href="#advies" class="btn btn--secundair">Gratis adviesgesprek &darr;</a>
+    </div>
+  </div>
+</section>
+
+<section id="aanbod" class="aanbod band--zand" aria-labelledby="aanbod-titel">
+  <div class="container aanbod-rij">
+    <p class="aanbod-prijs">&euro;145</p>
+
+    <div class="aanbod-tekst">
+      <span class="label aanbod-label">Pakketprijs</span>
+      <h2 id="aanbod-titel" class="aanbod-titel">Volledige lichaamslaser</h2>
+      <p class="aanbod-noot">Alle zones in &eacute;&eacute;n sessie van 1 tot 1,5 uur &middot; geen aparte zonekosten</p>
+    </div>
+
+    <div class="aanbod-acties">
+      <a href="https://wa.me/32485140436?text=Hallo%20Gold%20Phi%20Arife%2C%20ik%20wil%20graag%20meer%20weten%20over%20de%20volledige%20lichaamslaser."
+         class="aanbod-meer" target="_blank" rel="noopener"
+         data-boek-open data-categorie="volledig-lichaam">Wat de prijs dekt <span aria-hidden="true">&rarr;</span></a>
+      <a href="https://wa.me/32485140436?text=Hallo%20Gold%20Phi%20Arife%2C%20ik%20wil%20graag%20een%20afspraak%20maken%20voor%20de%20volledige%20lichaamslaser%20(%E2%82%AC145)."
+         class="btn btn--primair" target="_blank" rel="noopener"
+         data-boek-open data-categorie="volledig-lichaam" data-dienst="Volledige lichaamslaser">Nu boeken</a>
+    </div>
+  </div>
+</section>
+
+<section id="behandelingen" class="band--canvas fade-in">
+  <div class="container">
+    <h2>Onze behandelingen</h2>
+    <p class="behandelingen-intro">Kies een behandeling om de tarieven te bekijken en meteen een afspraak te maken.</p>
+
+    <ul class="diensten-grid">
+
+      <li class="dienst-kaart">
+        <img class="dienst-foto foto--4-5" src="media/behandelingen/laser-gelaat-800.webp"
+             srcset="media/behandelingen/laser-gelaat-400.webp 400w, media/behandelingen/laser-gelaat-800.webp 800w"
+             sizes="(min-width: 1024px) 378px, (min-width: 640px) 46vw, 104px"
+             width="800" height="1000" loading="lazy" decoding="async"
+             alt="Laserontharing van het gelaat: het handstuk glijdt langs de kaaklijn terwijl de ogen beschermd zijn.">
+        <div class="dienst-kaart-body">
+          <span class="label">Definitief ontharen · laser</span>
+          <h3 class="dienst-kaart-naam">
+            <button type="button" class="dienst-kaart-knop" data-boek-open data-categorie="laser-gelaat">Gelaat</button>
+          </h3>
+          <p class="dienst-kaart-diensten">Wenkbrauwen · Bovenlip · Kin · Wangen · Kaaklijn · Hele gelaat</p>
+          <p class="dienst-kaart-vanaf">vanaf €20</p>
+          <p class="dienst-kaart-actie">Tarieven &amp; afspraak <span aria-hidden="true">→</span></p>
+        </div>
+      </li>
+
+      <li class="dienst-kaart">
+        <img class="dienst-foto foto--4-5" src="media/behandelingen/laser-lichaam-800.webp"
+             srcset="media/behandelingen/laser-lichaam-400.webp 400w, media/behandelingen/laser-lichaam-800.webp 800w"
+             sizes="(min-width: 1024px) 378px, (min-width: 640px) 46vw, 104px"
+             width="800" height="1000" loading="lazy" decoding="async"
+             alt="Laserontharing van de oksel bij een cli&euml;nte die ontspannen op de behandeltafel ligt.">
+        <div class="dienst-kaart-body">
+          <span class="label">Definitief ontharen · laser</span>
+          <h3 class="dienst-kaart-naam">
+            <button type="button" class="dienst-kaart-knop" data-boek-open data-categorie="laser-lichaam">Lichaam</button>
+          </h3>
+          <p class="dienst-kaart-diensten">Oksels · Bikinilijn</p>
+          <p class="dienst-kaart-vanaf">vanaf €45</p>
+          <p class="dienst-kaart-actie">Tarieven &amp; afspraak <span aria-hidden="true">→</span></p>
+        </div>
+      </li>
+
+      <li class="dienst-kaart">
+        <img class="dienst-foto foto--4-5" src="media/behandelingen/laser-huid-800.webp"
+             srcset="media/behandelingen/laser-huid-400.webp 400w, media/behandelingen/laser-huid-800.webp 800w"
+             sizes="(min-width: 1024px) 378px, (min-width: 640px) 46vw, 104px"
+             width="800" height="1000" loading="lazy" decoding="async"
+             alt="Laserbehandeling van de huid met een zwart carbonmasker over het volledige gelaat.">
+        <div class="dienst-kaart-body">
+          <span class="label">Huidverbetering</span>
+          <h3 class="dienst-kaart-naam">
+            <button type="button" class="dienst-kaart-knop" data-boek-open data-categorie="huidlaser">Laserbehandeling</button>
+          </h3>
+          <p class="dienst-kaart-diensten">Laserbehandeling gelaat</p>
+          <p class="dienst-kaart-vanaf">€50</p>
+          <p class="dienst-kaart-actie">Tarieven &amp; afspraak <span aria-hidden="true">→</span></p>
+        </div>
+      </li>
+
+      <li class="dienst-kaart">
+        <img class="dienst-foto foto--4-5" src="media/behandelingen/fibroblast-800.webp"
+             srcset="media/behandelingen/fibroblast-400.webp 400w, media/behandelingen/fibroblast-800.webp 800w"
+             sizes="(min-width: 1024px) 378px, (min-width: 640px) 46vw, 104px"
+             width="800" height="1000" loading="lazy" decoding="async"
+             alt="Fibroblast ion pen behandeling: de pen werkt nauwkeurig langs het bovenooglid.">
+        <div class="dienst-kaart-body">
+          <span class="label">Huidverbetering</span>
+          <h3 class="dienst-kaart-naam">
+            <button type="button" class="dienst-kaart-knop" data-boek-open data-categorie="fibroblast">Fibroblast · ion pen</button>
+          </h3>
+          <p class="dienst-kaart-diensten">Ooglid correctie · Pigment verwijderen · Rimpels rond de ogen</p>
+          <p class="dienst-kaart-vanaf">vanaf €40</p>
+          <p class="dienst-kaart-actie">Tarieven &amp; afspraak <span aria-hidden="true">→</span></p>
+        </div>
+      </li>
+
+      <li class="dienst-kaart">
+        <img class="dienst-foto foto--4-5" src="media/behandelingen/gelaatsbehandeling-800.webp"
+             srcset="media/behandelingen/gelaatsbehandeling-400.webp 400w, media/behandelingen/gelaatsbehandeling-800.webp 800w"
+             sizes="(min-width: 1024px) 378px, (min-width: 640px) 46vw, 104px"
+             width="800" height="1000" loading="lazy" decoding="async"
+             alt="Gelaatsbehandeling: rustige massage van de wangen met de handen, zonder toestellen.">
+        <div class="dienst-kaart-body">
+          <span class="label">Gelaatsverzorging</span>
+          <h3 class="dienst-kaart-naam">
+            <button type="button" class="dienst-kaart-knop" data-boek-open data-categorie="gelaatsbehandeling">Gelaatsbehandeling</button>
+          </h3>
+          <p class="dienst-kaart-diensten">Reiniging · verzorging op maat van uw huid</p>
+          <p class="dienst-kaart-vanaf">€65</p>
+          <p class="dienst-kaart-actie">Tarieven &amp; afspraak <span aria-hidden="true">→</span></p>
+        </div>
+      </li>
+
+      <li class="dienst-kaart">
+        <img class="dienst-foto foto--4-5" src="media/behandelingen/pmu-wenkbrauwen-800.webp"
+             srcset="media/behandelingen/pmu-wenkbrauwen-400.webp 400w, media/behandelingen/pmu-wenkbrauwen-800.webp 800w"
+             sizes="(min-width: 1024px) 378px, (min-width: 640px) 46vw, 104px"
+             width="800" height="1000" loading="lazy" decoding="async"
+             alt="Permanente make-up van de wenkbrauwen: fijne pigmentatie in de vorm van de eigen wenkbrauw.">
+        <div class="dienst-kaart-body">
+          <span class="label">Permanente make-up</span>
+          <h3 class="dienst-kaart-naam">
+            <button type="button" class="dienst-kaart-knop" data-boek-open data-categorie="pmu-wenkbrauwen">Wenkbrauwen</button>
+          </h3>
+          <p class="dienst-kaart-diensten">Powder Brows · Ombré Brows · Soft Brows</p>
+          <p class="dienst-kaart-vanaf">vanaf €220</p>
+          <p class="dienst-kaart-actie">Tarieven &amp; afspraak <span aria-hidden="true">→</span></p>
+        </div>
+      </li>
+
+      <li class="dienst-kaart">
+        <img class="dienst-foto foto--4-5" src="media/behandelingen/pmu-lippen-800.webp"
+             srcset="media/behandelingen/pmu-lippen-400.webp 400w, media/behandelingen/pmu-lippen-800.webp 800w"
+             sizes="(min-width: 1024px) 378px, (min-width: 640px) 46vw, 104px"
+             width="800" height="1000" loading="lazy" decoding="async"
+             alt="Lippen met een zachte, natuurlijke lipblush na permanente make-up.">
+        <div class="dienst-kaart-body">
+          <span class="label">Permanente make-up</span>
+          <h3 class="dienst-kaart-naam">
+            <button type="button" class="dienst-kaart-knop" data-boek-open data-categorie="pmu-lippen">Lippen</button>
+          </h3>
+          <p class="dienst-kaart-diensten">Baby Lips · Candy Lips · Aquarelle Lips · Magic Lips · 3D Lips · 7 Carats</p>
+          <p class="dienst-kaart-vanaf">vanaf €250</p>
+          <p class="dienst-kaart-actie">Tarieven &amp; afspraak <span aria-hidden="true">→</span></p>
+        </div>
+      </li>
+
+      <li class="dienst-kaart">
+        <img class="dienst-foto foto--4-5" src="media/behandelingen/pmu-eyeliner-800.webp"
+             srcset="media/behandelingen/pmu-eyeliner-400.webp 400w, media/behandelingen/pmu-eyeliner-800.webp 800w"
+             sizes="(min-width: 1024px) 378px, (min-width: 640px) 46vw, 104px"
+             width="800" height="1000" loading="lazy" decoding="async"
+             alt="Oog met een fijne permanente eyeliner tussen de wimpers, discreet en natuurlijk.">
+        <div class="dienst-kaart-body">
+          <span class="label">Permanente make-up</span>
+          <h3 class="dienst-kaart-naam">
+            <button type="button" class="dienst-kaart-knop" data-boek-open data-categorie="pmu-eyeliner">Eyeliner</button>
+          </h3>
+          <p class="dienst-kaart-diensten">Tussen de wimpers · Klassieke eyeliner · Zachte eyeliner</p>
+          <p class="dienst-kaart-vanaf">vanaf €200</p>
+          <p class="dienst-kaart-actie">Tarieven &amp; afspraak <span aria-hidden="true">→</span></p>
+        </div>
+      </li>
+
+      <li class="dienst-kaart">
+        <img class="dienst-foto foto--4-5" src="media/behandelingen/beaute-de-regard-800.webp"
+             srcset="media/behandelingen/beaute-de-regard-400.webp 400w, media/behandelingen/beaute-de-regard-800.webp 800w"
+             sizes="(min-width: 1024px) 378px, (min-width: 640px) 46vw, 104px"
+             width="800" height="1000" loading="lazy" decoding="async"
+             alt="Close-up van een oog met gelifte wimpers en een verzorgde wenkbrauw.">
+        <div class="dienst-kaart-body">
+          <span class="label">Beauté de regard</span>
+          <h3 class="dienst-kaart-naam">
+            <button type="button" class="dienst-kaart-knop" data-boek-open data-categorie="beaute-de-regard">Blik &amp; wimpers</button>
+          </h3>
+          <p class="dienst-kaart-diensten">Details in overleg tijdens het intakegesprek</p>
+          <p class="dienst-kaart-vanaf">vanaf €200</p>
+          <p class="dienst-kaart-actie">Tarieven &amp; afspraak <span aria-hidden="true">→</span></p>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+<section id="advies" class="advies band--inkt fade-in" aria-labelledby="advies-titel">
+  <div class="container advies-rooster">
+    <div class="advies-tekst">
+      <span class="label">Gratis &amp; vrijblijvend</span>
+      <h2 id="advies-titel">Nog niet zeker? Begin met een gesprek.</h2>
+      <p class="tekst">Je hoeft niet te weten welke behandeling je nodig hebt. In een half uur kijken we samen naar je huid, je haartype en wat je wilt bereiken. Daarna weet je wat er mogelijk is, hoeveel sessies je ongeveer nodig hebt en wat het gaat kosten.</p>
+      <a href="https://wa.me/32485140436?text=Hallo%20Gold%20Phi%20Arife%2C%20ik%20wil%20graag%20een%20gratis%20adviesgesprek%20van%2030%20minuten%20inplannen." class="btn btn--primair advies-knop" target="_blank" rel="noopener">Gratis adviesgesprek</a>
+    </div>
+  </div>
+</section>
+
+<section id="veiligheid" class="band--zand fade-in">
+  <div class="container">
+    <h2>Veiligheid eerst, dan het esthetische</h2>
+    <div class="vertrouwen-grid">
+      <div class="vertrouwen-blok">
+        <span class="label">Intake &middot; gratis</span>
+        <h3>Gesprek v&oacute;&oacute;r de behandeling</h3>
+        <p class="tekst">We bespreken altijd je huidtype, eventuele medicatie en verwachtingen. Zo weten we allebei wat mogelijk is — en wat niet.</p>
+      </div>
+      <div class="vertrouwen-blok">
+        <span class="label">Hygiëne</span>
+        <h3>Steriel en veilig werken</h3>
+        <p class="tekst">Elk materiaal is éénmalig of gesteriliseerd. Geen compromissen.</p>
+      </div>
+      <div class="vertrouwen-blok">
+        <span class="label">Eerlijk advies</span>
+        <h3>Soms is het antwoord nee</h3>
+        <p class="tekst">Niet elke behandeling past bij elk huidtype. Als iets niet geschikt is, zeg ik dat eerlijk — jouw gezondheid gaat voor.</p>
+      </div>
+    </div>
+
+    <!-- De techniek: wat een diodelaser is, en waarom dat geen IPL is -->
+    <details class="uitklap">
+      <summary>
+        <span class="uitklap-kop">
+          <span class="label">De techniek</span>
+          <span class="uitklap-titel">Een diodelaser — en waarom dat geen IPL is</span>
+        </span>
+      </summary>
+      <div class="uitleg">
+        <div class="uitleg-tekst">
+          <span class="label">De techniek</span>
+          <h3>Een diodelaser — en waarom dat geen IPL is</h3>
+          <p class="tekst">Wij werken met een diodelaser. Die stuurt één golflengte licht gericht naar het pigment in de haarwortel. Een IPL-apparaat stuurt een breed spectrum licht dat zich over de huid verspreidt. Daardoor werkt IPL minder gericht en zijn er doorgaans meer sessies nodig voor hetzelfde resultaat.</p>
+          <p class="tekst">Laser werkt alleen op haren die op dat moment in hun groeifase zitten. Eén sessie is dus nooit genoeg: reken op gemiddeld zes tot acht sessies, met enkele weken ertussen. Hoeveel jij er precies nodig hebt, hangt af van je huid, je haar en de zone.</p>
+        </div>
+
+        <table class="vergelijking">
+          <thead>
+            <tr><td></td><th scope="col">Diodelaser</th><th scope="col">IPL</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Licht</th><td>Eén golflengte</td><td>Breed spectrum</td></tr>
+            <tr><th scope="row">Werking</th><td>Gericht op de haarwortel</td><td>Verspreid over de huid</td></tr>
+            <tr><th scope="row">Sessies</th><td>Gemiddeld 6–8</td><td>Meestal meer</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </details>
+
+    <!-- Contra-indicaties: eerlijk vooraf, scheelt een nutteloze afspraak -->
+    <details class="uitklap">
+      <summary>
+        <span class="uitklap-kop">
+          <span class="label">Goed om vooraf te weten</span>
+          <span class="uitklap-titel">Wanneer we niet — of nog niet — laseren</span>
+        </span>
+      </summary>
+      <div class="contra">
+        <span class="label">Goed om vooraf te weten</span>
+        <h3>Wanneer we niet — of nog niet — laseren</h3>
+
+        <div class="contra-grid">
+          <div class="contra-kolom">
+            <span class="contra-kop">We laseren niet bij</span>
+            <ul class="contra-lijst">
+              <li>Zwangerschap en borstvoeding</li>
+              <li>Een pacemaker of een metalen implantaat in de zone</li>
+              <li>Epilepsie</li>
+              <li>Tatoeages of permanente make-up in de zone</li>
+              <li>Actieve infectie, open wondjes, eczeem of psoriasis in de zone</li>
+              <li>Koorts of ziekte op de dag van de afspraak</li>
+            </ul>
+          </div>
+
+          <div class="contra-kolom">
+            <span class="contra-kop">Eerst even overleggen bij</span>
+            <ul class="contra-lijst">
+              <li>Lichtgevoelige medicatie — denk aan bepaalde antibiotica, isotretinoïne of sint-janskruid</li>
+              <li>Recent zonnen, zonnebank of zelfbruiner — we wachten minstens twee weken</li>
+              <li>Een recente peeling of laserbehandeling in dezelfde zone</li>
+              <li>Huidaandoeningen of een neiging tot littekenvorming</li>
+              <li>Een medische behandeling die je huid gevoeliger maakt</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="contra-noot">Laser richt zich op het pigment in de haar. Witte, grijze en heel lichte blonde haren bevatten daar te weinig van — daar heeft laserontharing geen effect op. Rood haar reageert wisselend. Dat zeg ik liever vooraf dan na vier sessies.</p>
+
+        <p class="tekst contra-slot">Twijfel je of iets op jou van toepassing is? Breng het gerust ter sprake in een <a href="https://wa.me/32485140436?text=Hallo%20Gold%20Phi%20Arife%2C%20ik%20wil%20graag%20een%20gratis%20adviesgesprek%20van%2030%20minuten%20inplannen." target="_blank" rel="noopener">gratis adviesgesprek</a>. Is laseren niet geschikt voor je, dan zeg ik dat eerlijk — en kijken we samen naar een alternatief.</p>
+      </div>
+    </details>
+  </div>
+</section>
+
+<section id="over" class="band--canvas fade-in">
+  <div class="container">
+    <div class="over-praktisch-grid">
+      <div class="bio-content">
+        <div class="foto-placeholder foto--3-4">Foto: Arife</div>
+        <h2>Arife</h2>
+        <span class="label">Schoonheidsspecialist</span>
+        <p class="tekst">Met een achtergrond als farmaceutisch technisch assistente werk ik precies en hygiënisch. Bij Gold Phi Arife neem ik de tijd voor elke klant — van het eerste gesprek tot de nazorg. Ik geloof dat goede begeleiding begint bij eerlijke verwachtingen en persoonlijke aandacht.</p>
+      </div>
+      <div class="praktisch-content">
+        <h3>Praktische informatie</h3>
+        <p class="tekst">
+          <strong>Adres</strong><br>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=Prins%20Leopoldlei%203%2C%202640%20Mortsel%2C%20Belgi%C3%AB" class="route-link" target="_blank" rel="noopener">Prins Leopoldlei 3, 2640 Mortsel <span aria-hidden="true">&nearr;</span></a><br>
+          <small>Vlak bij halte Mortsel-Oude God</small>
+        </p>
+        <p class="tekst"><em>Werken op afspraak</em></p>
+        
+        <span class="label">Openingstijden</span>
+        <table>
+          <tbody>
+            <tr><td>Maandag</td><td>10:00 – 20:00</td></tr>
+            <tr><td>Dinsdag</td><td>19:00 – 21:00</td></tr>
+            <tr><td>Woensdag</td><td>19:00 – 21:00</td></tr>
+            <tr><td>Donderdag</td><td>10:00 – 20:00</td></tr>
+            <tr><td>Vrijdag</td><td>10:00 – 20:00</td></tr>
+            <tr><td>Zaterdag</td><td>18:00 – 21:00</td></tr>
+            <tr><td>Zondag</td><td>10:00 – 20:00</td></tr>
+          </tbody>
+        </table>
+
+        <span class="label">Contact</span>
+        <ul class="contact-lijst">
+          <li>
+            <a href="tel:+32485140436" class="contact-link">
+              <svg class="contact-icoon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>0485 14 04 36</span>
+              <svg class="contact-pijl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/32485140436?text=Hallo%20Gold%20Phi%20Arife%2C%20ik%20wil%20graag%20een%20afspraak%20maken%20voor%20" target="_blank" rel="noopener" class="contact-link">
+              <svg class="contact-icoon" viewBox="1.2 1.2 21.6 21.6" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/><g transform="translate(12.4 11.4) scale(0.48) translate(-12 -12)" stroke-width="2.8125"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></g></svg>
+              <span>WhatsApp</span>
+              <svg class="contact-pijl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:arifegoldphi@gmail.com" class="contact-link">
+              <svg class="contact-icoon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="0"/><path d="M22 4 12 13 2 4"/></svg>
+              <span>arifegoldphi@gmail.com</span>
+              <svg class="contact-pijl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com/goldphi_arife" target="_blank" rel="noopener" class="contact-link">
+              <svg class="contact-icoon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="0"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              <span>@goldphi_arife</span>
+              <svg class="contact-pijl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </li>
+        </ul>
+        
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2502.5!2d4.4554155!3d51.1697598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDEwJzExLjEiTiA0wrAyNyczMy41IkU!5e0!3m2!1snl!2sbe!4v1" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Gold Phi Arife locatie"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="band--zand fade-in">
+  <div class="container">
+    <h2>Veelgestelde vragen</h2>
+    
+    <div class="faq-lijst">
+      <details name="faq">
+        <summary>Doet laseren pijn?</summary>
+        <div class="faq-antwoord">
+          <p class="tekst">De meeste klanten omschrijven het als een korte tik of warmteprikkel. De gevoeligheid verschilt per zone en per persoon. We passen de intensiteit altijd aan op jouw huidtype en comfortniveau.</p>
+        </div>
+      </details>
+      
+      <details name="faq">
+        <summary>Hoeveel sessies heb ik nodig?</summary>
+        <div class="faq-antwoord">
+          <p class="tekst">Dat hangt af van de zone, je haartype en je huidkleur. Gemiddeld zijn er zes tot acht sessies nodig met tussenpozen van vier tot zes weken. Tijdens de intake bespreken we een realistisch verwachtingspatroon.</p>
+        </div>
+      </details>
+      
+      <details name="faq">
+        <summary>Hoelang blijft permanente make-up zitten?</summary>
+        <div class="faq-antwoord">
+          <p class="tekst">Semipermanente make-up vervaagt geleidelijk over één tot drie jaar, afhankelijk van je huidtype, levensstijl en nazorg. Een bijwerking na vier tot zes weken houdt het resultaat langer mooi.</p>
+        </div>
+      </details>
+      
+      <details name="faq">
+        <summary>Waar moet ik op letten na de behandeling?</summary>
+        <div class="faq-antwoord">
+          <p class="tekst">Na een laserbehandeling vermijd je directe zon, sauna en zware sport voor 48 uur. Bij permanente make-up krijg je een nazorgblad mee met duidelijke instructies. Twijfel je achteraf? Bel of stuur gerust een bericht.</p>
+        </div>
+      </details>
+      
+      <details name="faq">
+        <summary>Waarom vraag je naar mijn medicatie?</summary>
+        <div class="faq-antwoord">
+          <p class="tekst">Sommige medicijnen — zoals bloedverdunners of bepaalde huidmedicatie — beïnvloeden hoe je huid reageert op laser of pigment. Door dit vooraf te bespreken, kunnen we veilig werken en het beste resultaat behalen.</p>
+        </div>
+      </details>
+    </div>
+
+    <!-- Signatuur: sluit de pagina-inhoud af met het merkteken -->
+    <div class="signatuur" role="presentation">
+      <span class="signatuur-lijn"></span>
+      <img src="media/phi.png" alt="" class="signatuur-merk" width="194" height="256" loading="lazy" decoding="async" aria-hidden="true">
+      <span class="signatuur-lijn"></span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="band--inkt">
+  <div class="container footer-content">
+    <div class="footer-merk">
+      <img src="media/phi.png" alt="Gold Phi Arife" class="footer-phi" width="194" height="256" loading="lazy" decoding="async">
+      <span class="footer-naam">Gold Phi Arife</span>
+    </div>
+    <div class="footer-info">
+      <div class="footer-kolom">
+        <span class="label">Adres</span>
+        <p><a href="https://www.google.com/maps/dir/?api=1&destination=Prins%20Leopoldlei%203%2C%202640%20Mortsel%2C%20Belgi%C3%AB" class="route-link" target="_blank" rel="noopener">Prins Leopoldlei 3<br>2640 Mortsel <span aria-hidden="true">&nearr;</span></a></p>
+      </div>
+      <div class="footer-kolom">
+        <span class="label">Contact</span>
+        <a href="tel:+32485140436" class="contact-link">
+          <svg class="contact-icoon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>0485 14 04 36</span>
+        </a>
+        <a href="mailto:arifegoldphi@gmail.com" class="contact-link">
+          <svg class="contact-icoon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="0"/><path d="M22 4 12 13 2 4"/></svg>
+          <span>arifegoldphi@gmail.com</span>
+        </a>
+      </div>
+      <div class="footer-kolom">
+        <span class="label">Social</span>
+        <a href="https://instagram.com/goldphi_arife" target="_blank" rel="noopener" class="contact-link">
+          <svg class="contact-icoon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="0"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          <span>@goldphi_arife</span>
+        </a>
+        <a href="https://wa.me/32485140436" target="_blank" rel="noopener" class="contact-link">
+          <svg class="contact-icoon" viewBox="1.2 1.2 21.6 21.6" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/><g transform="translate(12.4 11.4) scale(0.48) translate(-12 -12)" stroke-width="2.8125"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></g></svg>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+    </div>
+    <hr class="footer-lijn">
+    <div class="footer-onder">
+      <p>© 2026 Gold Phi Arife. Alle rechten voorbehouden.</p>
+      <div class="footer-links">
+        <a href="#">Privacybeleid</a>
+        <a href="#">Algemene voorwaarden</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="mobiel-balk">
+  <a href="tel:+32485140436" class="btn btn--secundair mobiel-balk-bel">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    <span>Bellen</span>
+  </a>
+  <a href="https://wa.me/32485140436?text=Hallo%20Gold%20Phi%20Arife%2C%20ik%20wil%20graag%20een%20afspraak%20maken%20voor%20" class="btn btn--primair mobiel-balk-boek" target="_blank" rel="noopener" data-boek-open>Afspraak maken</a>
+</div>
+
+<!-- ============================================================
+     Afspraak maken — keuze + tarieven
+     Stap 1: categorie · Stap 2: behandeling + tarief · daarna WhatsApp
+     ============================================================ -->
+<dialog id="boek" class="boek" aria-labelledby="boek-titel">
+
+  <div class="boek-kop">
+    <div class="boek-kop-tekst">
+      <img src="media/phi.png" alt="" class="boek-merk" width="194" height="256" loading="lazy" decoding="async" aria-hidden="true">
+      <div>
+        <span class="label">Afspraak maken</span>
+        <h2 id="boek-titel" class="boek-titel">Kies uw behandeling</h2>
+      </div>
+    </div>
+    <button type="button" class="boek-sluit" data-boek-sluit aria-label="Sluiten">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+
+  <div class="boek-inhoud">
+
+    <!-- ---------- Stap 1: categorie ---------- -->
+    <div class="boek-stap" data-stap="1">
+      <ul class="boek-cat-lijst">
+        <li><button type="button" class="boek-cat" data-categorie="volledig-lichaam"><span class="boek-cat-naam">Volledige lichaamslaser</span><span class="boek-cat-vanaf">&euro;145</span></button></li>
+        <li><button type="button" class="boek-cat" data-categorie="laser-gelaat"><span class="boek-cat-naam">Laserontharing · Gelaat</span><span class="boek-cat-vanaf">vanaf €20</span></button></li>
+        <li><button type="button" class="boek-cat" data-categorie="laser-lichaam"><span class="boek-cat-naam">Laserontharing · Lichaam</span><span class="boek-cat-vanaf">vanaf €45</span></button></li>
+        <li><button type="button" class="boek-cat" data-categorie="huidlaser"><span class="boek-cat-naam">Laserbehandeling huid</span><span class="boek-cat-vanaf">€50</span></button></li>
+        <li><button type="button" class="boek-cat" data-categorie="fibroblast"><span class="boek-cat-naam">Fibroblast · ion pen</span><span class="boek-cat-vanaf">vanaf €40</span></button></li>
+        <li><button type="button" class="boek-cat" data-categorie="gelaatsbehandeling"><span class="boek-cat-naam">Gelaatsbehandeling</span><span class="boek-cat-vanaf">€65</span></button></li>
+        <li><button type="button" class="boek-cat" data-categorie="pmu-wenkbrauwen"><span class="boek-cat-naam">Permanente make-up · Wenkbrauwen</span><span class="boek-cat-vanaf">vanaf €220</span></button></li>
+        <li><button type="button" class="boek-cat" data-categorie="pmu-lippen"><span class="boek-cat-naam">Permanente make-up · Lippen</span><span class="boek-cat-vanaf">vanaf €250</span></button></li>
+        <li><button type="button" class="boek-cat" data-categorie="pmu-eyeliner"><span class="boek-cat-naam">Permanente make-up · Eyeliner</span><span class="boek-cat-vanaf">vanaf €200</span></button></li>
+        <li><button type="button" class="boek-cat" data-categorie="beaute-de-regard"><span class="boek-cat-naam">Beauté de regard</span><span class="boek-cat-vanaf">vanaf €200</span></button></li>
+      </ul>
+    </div>
+
+    <!-- ---------- Stap 2: behandeling + tarief ---------- -->
+    <div class="boek-stap" data-stap="2" hidden>
+      <button type="button" class="boek-terug" data-boek-terug>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Alle behandelingen
+      </button>
+
+      <div class="boek-groep" data-categorie="volledig-lichaam" hidden>
+        <h3 class="boek-groep-naam">Volledige lichaamslaser</h3>
+        <ul class="boek-dienst-lijst">
+          <li><label class="boek-dienst"><input type="radio" name="dienst" data-naam="Volledige lichaamslaser" data-prijs="&euro;145"><span class="boek-dienst-naam">Alle zones in &eacute;&eacute;n sessie</span><span class="boek-dienst-duur">1&ndash;1,5 uur</span><span class="boek-dienst-prijs">&euro;145</span></label></li>
+        </ul>
+        <p class="boek-notitie">Inbegrepen: onderbenen, bovenbenen, armen, oksels, bikinilijn, buik, rug en gelaat. Er komen geen aparte zonekosten bij. De precieze afbakening bespreken we bij de intake.</p>
+      </div>
+
+      <div class="boek-groep" data-categorie="laser-gelaat" hidden>
+        <h3 class="boek-groep-naam">Laserontharing · Gelaat</h3>
+        <ul class="boek-dienst-lijst">
+          <li><label class="boek-dienst"><input type="radio" name="dienst" data-naam="Wenkbrauwen" data-prijs="€20"><span class="boek-dienst-naam">Wenkbrauwen</span><span class="boek-dienst-duur">15 min</span><span class="boek-dienst-prijs">€20</span></label></li>
+          <li><label class="boek-dienst"><input type="radio" name="dienst" data-naam="Bovenlip" data-prijs="€30"><span class="boek-dienst-naam">Bovenlip</span><span class="boek-dienst-duur">15 min</span><span class="boek-dienst-prijs">€30</span></label></li>
+          <li><label class="boek-dienst"><input type="radio" name="dienst" data-naam="Kin" data-prijs="€30"><span class="boek-dienst-naam">Kin</span><span class="boek-dienst-duur">15 min</span><span class="boek-dienst-prijs">€30</span></label></li>
+          <li><label class="boek-dienst"><input type="radio" name="dienst" data-naam="Wangen" data-prijs="€35"><span class="boek-dienst-naam">Wangen</span><span class="boek-dienst-duur">15 min</span><span class="boek-dienst-prijs">€35</span></label></li>
+          <li><label class="boek-dienst"><input type="radio" name="dienst" data-naam="Kaaklijn" data-prijs="€40"><span class="boek-dienst-naam">Kaaklijn</span><span class="boek-dienst-duur">15 min</span><span class="boek-dienst-prijs">€40</span></label></li>
+          <li><label class="boek-dienst"><input type="radio" name="dienst" data-naam="Hele gelaat" data-prijs="€90"><span class="boek-dienst-naam">Hele gelaat</span><span class="boek-dienst-duur">30 min</span><span class="boek-dienst-prijs">€90</span></label></li>
+        </ul>
+      </div>
+
+      <div class="boek-groep" data-categorie="laser-lichaam" hidden>
+        <h3 class="boek-groep-naam">Laserontharing · Lichaam</h3>
+        <ul class="boek-dienst-lijst">
+          <li><label class="boek-dienst"><input type="radio" name="dienst" data-naam="Oksels" data-prijs="€45"><span class="boek-dienst-naam">Oksels</span><span class="boek-dienst-duur">15 min</span><span class="boek-dienst-prijs">€45</span></label></li>
+          <li><label class="boek-dienst"><input type="radio" name="dienst" data-naam="Bikinilijn" data-prijs="€60"><span class="boek-dienst-naam">Bikinilijn</span><span class="boek-dienst-duur">20 min</span><span class="boek-dienst-prijs">€60</span></label></li>
+        </ul>
+      </div>
+
+      <div class="boek-groep" data-categorie="huidlaser" hidden>
+        <h3 class="boek-groep-naam">Laserbehandeling huid</h3>
+        <ul class="boek-dienst-lijst">
+          <li><label class="boek-dienst"><input type="radio" name="dienst" data-naam="Laserbehandeling gelaat" data-prijs="€50"><span class="boek-dienst-naam">Laserbehandeling gelaat</span><span class="boek-dienst-duur">35 min</span><span class="boek-dienst-prijs">€50</span></label></li>
+        </ul>
+      </div>
+
+      <div class="boek-groep" data-categorie="fibroblast" hidden>
+        <h3 class="boek-groep-naam">Fibroblast · ion pen</h3>
+        <ul class="boek-dienst-lijst">
+          <li><label class="boek-dienst"><input type="radio" name="dienst" data-naam="Ooglid correctie" data-prijs="vanaf €40"><span class="boek-dienst-naam">Ooglid correctie</span><span class="boek-dienst-duur">30–60 min</span><span class="boek-dienst-prijs">vanaf €40</span></label></li>
+          <li><label class="boek-dienst"><input type="radio" name="dienst" data-naam="Pigment verwijderen" data-prijs="€40"><span class="boek-dienst-naam">Pigment verwijderen</span><span class="boek-dienst-duur">30 min</span><span class="boek-dienst-prijs">€40</span></label></li>
+          <li><label class="boek-dienst"><input type="radio" name="dienst" data-naam="Rimpels rond de ogen" data-prijs="€50"><span class="boek-dienst-naam">Rimpels rond de ogen</span><span class="boek-dienst-duur">45 min</span><span class="boek-dienst-prijs">€50</span></label></li>
+          <li><label class="boek-dienst"><input type="radio" name="dienst" data-naam="Volledige behandeling" data-prijs="€200"><span class="boek-dienst-naam">Volledige behandeling</span><span class="boek-dienst-duur">60 min</span><span class="boek-dienst-prijs">€200</span></label></li>
+        </ul>
+      </div>
+
+      <div class="boek-groep" data-categorie="gelaatsbehandeling" hidden>
+        <h3 class="boek-groep-naam">Gelaatsbehandeling</h3>
+        <ul class="boek-dienst-lijst">
+          <li><label class="boek-dienst"><input type="radio" name="dienst" data-naam="Gelaatsbehandeling" data-prijs="€65"><span class="boek-dienst-naam">Gelaatsbehandeling</span><span class="boek-dienst-duur">40 min</span><span class="boek-dienst-prijs">€65</span></label></li>
+        </ul>
+      </div>
+
+      <div class="boek-groep" data-categorie="pmu-wenkbrauwen" hidden>
+        <h3 class="boek-groep-naam">Permanente make-up · Wenkbrauwen</h3>
+        <ul class="boek-dienst-lijst">
+          <li><label class="boek-dienst"><input type="radio" name="dienst" data-naam="Powder Brows" data-prijs="€220"><span class="boek-dienst-naam">Powder Brows</span><span class="boek-dienst-duur">duur in overleg</span><span class="boek-dienst-prijs">€220</span></label></li>
+          <li><label class="boek-dienst"><input type="radio" name="dienst" data-naam="Ombré Brows" data-prijs="€220"><span class="boek-dienst-naam">Ombré Brows</span><span class="boek-dienst-duur">duur in overleg</span><span class="boek-dienst-prijs">€220</span></label></li>
+          <li><label class="boek-dienst"><input type="radio" name="dienst" data-naam="Soft Brows" data-prijs="€220"><span class="boek-dienst-naam">Soft Brows</span><span class="boek-dienst-duur">duur in overleg</span><span class="boek-dienst-prijs">€220</span></label></li>
+          <li><label class="boek-dienst"><input type="radio" name="dienst" data-naam="Bijwerking wenkbrauwen" data-prijs="+€100"><span class="boek-dienst-naam">Bijwerking</span><span class="boek-dienst-duur">na eerdere behandeling</span><span class="boek-dienst-prijs">+€100</span></label></li>
+        </ul>
+      </div>
+
+      <div class="boek-groep" data-categorie="pmu-lippen" hidden>
+        <h3 class="boek-groep-naam">Permanente make-up · Lippen</h3>
+        <ul class="boek-dienst-lijst">
+          <li><label class="boek-dienst"><input type="radio" name="dienst" data-naam="Baby Lips" data-prijs="€250"><span class="boek-dienst-naam">Baby Lips</span><span class="boek-dienst-duur">duur in overleg</span><span class="boek-dienst-prijs">€250</span></label></li>
+          <li><label class="boek-dienst"><input type="radio" name="dienst" data-naam="Candy Lips" data-prijs="€250"><span class="boek-dienst-naam">Candy Lips</span><span class="boek-dienst-duur">duur in overleg</span><span class="boek-dienst-prijs">€250</span></label></li>
+          <li><label class="boek-dienst"><input type="radio" name="dienst" data-naam="Aquarelle Lips" data-prijs="€250"><span class="boek-dienst-naam">Aquarelle Lips</span><span class="boek-dienst-duur">duur in overleg</span><span class="boek-dienst-prijs">€250</span></label></li>
+          <li><label class="boek-dienst"><input type="radio" name="dienst" data-naam="Magic Lips" data-prijs="€250"><span class="boek-dienst-naam">Magic Lips</span><span class="boek-dienst-duur">duur in overleg</span><span class="boek-dienst-prijs">€250</span></label></li>
+          <li><label class="boek-dienst"><input type="radio" name="dienst" data-naam="3D Lips" data-prijs="€250"><span class="boek-dienst-naam">3D Lips</span><span class="boek-dienst-duur">duur in overleg</span><span class="boek-dienst-prijs">€250</span></label></li>
+          <li><label class="boek-dienst"><input type="radio" name="dienst" data-naam="7 Carats" data-prijs="€250"><span class="boek-dienst-naam">7 Carats</span><span class="boek-dienst-duur">duur in overleg</span><span class="boek-dienst-prijs">€250</span></label></li>
+          <li><label class="boek-dienst"><input type="radio" name="dienst" data-naam="Bijwerking lippen" data-prijs="+€100"><span class="boek-dienst-naam">Bijwerking</span><span class="boek-dienst-duur">na eerdere behandeling</span><span class="boek-dienst-prijs">+€100</span></label></li>
+        </ul>
+      </div>
+
+      <div class="boek-groep" data-categorie="pmu-eyeliner" hidden>
+        <h3 class="boek-groep-naam">Permanente make-up · Eyeliner</h3>
+        <ul class="boek-dienst-lijst">
+          <li><label class="boek-dienst"><input type="radio" name="dienst" data-naam="Eyeliner tussen de wimpers (ras-de-cils)" data-prijs="€200"><span class="boek-dienst-naam">Tussen de wimpers <small>(ras-de-cils)</small></span><span class="boek-dienst-duur">duur in overleg</span><span class="boek-dienst-prijs">€200</span></label></li>
+          <li><label class="boek-dienst"><input type="radio" name="dienst" data-naam="Klassieke eyeliner" data-prijs="€200"><span class="boek-dienst-naam">Klassieke eyeliner</span><span class="boek-dienst-duur">duur in overleg</span><span class="boek-dienst-prijs">€200</span></label></li>
+          <li><label class="boek-dienst"><input type="radio" name="dienst" data-naam="Zachte eyeliner" data-prijs="€200"><span class="boek-dienst-naam">Zachte eyeliner</span><span class="boek-dienst-duur">duur in overleg</span><span class="boek-dienst-prijs">€200</span></label></li>
+          <li><label class="boek-dienst"><input type="radio" name="dienst" data-naam="Bijwerking eyeliner" data-prijs="+€80"><span class="boek-dienst-naam">Bijwerking</span><span class="boek-dienst-duur">na eerdere behandeling</span><span class="boek-dienst-prijs">+€80</span></label></li>
+        </ul>
+      </div>
+
+      <div class="boek-groep" data-categorie="beaute-de-regard" hidden>
+        <h3 class="boek-groep-naam">Beauté de regard</h3>
+        <ul class="boek-dienst-lijst">
+          <li><label class="boek-dienst"><input type="radio" name="dienst" data-naam="Beauté de regard" data-prijs="vanaf €200"><span class="boek-dienst-naam">Beauté de regard</span><span class="boek-dienst-duur">details in overleg</span><span class="boek-dienst-prijs">vanaf €200</span></label></li>
+        </ul>
+        <p class="boek-notitie">De precieze invulling bespreken we tijdens een kort intakegesprek.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="boek-voet">
+    <p class="boek-keuze" data-boek-keuze>Nog geen behandeling gekozen</p>
+    <a class="btn btn--primair boek-verder btn--uit" data-boek-verder
+       href="https://wa.me/32485140436?text=Hallo%20Gold%20Phi%20Arife%2C%20ik%20wil%20graag%20een%20afspraak%20maken."
+       target="_blank" rel="noopener" aria-disabled="true">Verder via WhatsApp</a>
+    <p class="boek-voet-notitie">Tarieven zijn richtprijzen. De definitieve prijs bespreken we bij het adviesgesprek.</p>
+
+    <a href="https://wa.me/32485140436?text=Hallo%20Gold%20Phi%20Arife%2C%20ik%20wil%20graag%20een%20gratis%20adviesgesprek%20van%2030%20minuten%20inplannen." class="boek-uitweg" target="_blank" rel="noopener">
+      <span class="boek-uitweg-kop">Weet je nog niet wat je nodig hebt?</span>
+      <span class="boek-uitweg-actie">Plan een gratis adviesgesprek van 30 minuten <span aria-hidden="true">&rarr;</span></span>
+    </a>
+  </div>
+
+</dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
