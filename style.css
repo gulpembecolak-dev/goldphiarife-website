@@ -999,6 +999,79 @@ footer.band--inkt {
 }
 
 /* ==========================================================================
+   FOTOREEKS  —  de salon zelf, horizontaal doorlopend
+   De rij loopt bewust door tot voorbij de rand van het scherm: zo is te
+   zien dat er meer foto's volgen, zonder pijlen of stippen.
+   ========================================================================== */
+.foto-reeks {
+  padding: 48px 0;
+}
+
+.foto-reeks .container {
+  padding-bottom: 4px;
+}
+
+.foto-reeks .label {
+  margin-bottom: 20px;
+}
+
+.foto-reeks-rij {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  margin: 0;
+  padding: 0 20px;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  scroll-padding-left: 20px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.foto-reeks-rij::-webkit-scrollbar {
+  display: none;
+}
+
+.foto-reeks-rij > li {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+.foto-reeks-foto {
+  display: block;
+  width: 78vw;
+  max-width: 420px;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border: 1px solid var(--hair);
+  background-color: var(--zand);
+}
+
+@media (min-width: 640px) {
+  .foto-reeks-foto {
+    width: 60vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .foto-reeks {
+    padding: 64px 0;
+  }
+
+  /* Uitlijnen op de container, maar wel doorlopen tot de schermrand */
+  .foto-reeks-rij {
+    padding-left: max(20px, calc((100vw - var(--container-max)) / 2 + 20px));
+    padding-right: max(20px, calc((100vw - var(--container-max)) / 2 + 20px));
+    scroll-padding-left: max(20px, calc((100vw - var(--container-max)) / 2 + 20px));
+  }
+
+  .foto-reeks-foto {
+    width: 420px;
+  }
+}
+
+/* ==========================================================================
    DIENSTEN-GALERIJ  —  foto + naam per behandeling
    Tarieven zitten achter de knop "Afspraak maken" (zie .boek hieronder).
    ========================================================================== */
