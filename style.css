@@ -500,18 +500,6 @@ body.nav-open {
   gap: 10px;
 }
 
-.mobiel-balk-bel {
-  flex: 0 0 auto;
-  gap: 8px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.mobiel-balk-bel svg {
-  width: 18px;
-  height: 18px;
-}
-
 .mobiel-balk-boek {
   flex: 1 1 auto;
 }
@@ -2051,11 +2039,6 @@ body.nav-open .nav-toggle {
 @media (max-width: 400px) {
   .mobiel-balk {
     gap: 8px;
-    padding-left: 14px;
-    padding-right: 14px;
-  }
-
-  .mobiel-balk-bel {
     padding-left: 14px;
     padding-right: 14px;
   }
